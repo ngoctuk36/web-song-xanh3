@@ -18,4 +18,5 @@ Truy cập `http://localhost:3000`.
 1. Tạo repository trên GitHub và push code.
 2. Đăng nhập Render.com, tạo Web Service, liên kết đến GitHub repo.
 3. Chọn branch main, Build Command: `npm install && npm run build`, Start Command: `npm start`.
-4. Render sẽ tự động deploy.
+4. Render sẽ tự động deploy.# web-song-xanh3
+# web-song-xanh3
