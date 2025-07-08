@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sống Xanh Mobile</title>
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+  <div id="login-screen" class="screen">
+    <h2>Đăng nhập</h2>
+    <input id="username" placeholder="Tên đăng nhập">
+    <input id="password" type="password" placeholder="Mật khẩu">
+    <button onclick="login()">Đăng nhập</button>
+  </div>
+  <div id="home" class="screen hidden">
+    <h2>Xin chào, <span id="user-name"></span>!</h2>
+    <p>Hôm nay bạn đã sống xanh chưa?</p>
+    <button onclick="doAttendance()">THỰC HIỆN NGAY</button>
+    <hr>
+    <p>Tổng điểm xanh hôm nay: <span id="points">0</span></p>
+    <p>Tuần này: <span id="streak">0</span> ngày liên tiếp</p>
+  </div>
+  <div id="behaviors" class="screen hidden">
+    <h2>Danh sách hành vi xanh</h2>
+    <form id="behav-form">
+      <div id="beh-list"></div>
+      <button type="button" onclick="saveBehaviors()">LƯU LẠI</button>
+    </form>
+  </div>
+  <div id="stats" class="screen hidden">
+    <h2>Thống kê xanh</h2>
+    <div id="chart">[Biểu đồ placeholder]</div>
+    <p>Số ngày liên tiếp sống xanh: <span id="streak-stat">0</span></p>
+    <p>Tổng hành vi xanh: <span id="total-behaviors">0</span></p>
+  </div>
+  <div id="settings" class="screen hidden">
+    <h2>Cài đặt / Lời nhắc</h2>
+    <label>
+      Lời nhắc hằng ngày
+      <input id="reminder-toggle" type="checkbox">
+    </label>
+    <label>
+      Đặt giờ nhắc
+      <input id="reminder-time" type="time" value="20:00">
+    </label>
+  </div>
+  <nav class="bottom-nav">
+    <button onclick="showScreen('home')">Trang chủ</button>
+    <button onclick="showScreen('behaviors')">Hành vi</button>
+    <button onclick="showScreen('stats')">Thống kê</button>
+    <button onclick="showScreen('settings')">Cài đặt</button>
+  </nav>
+  <script src="js/mobile.js"></script>
+</body>
+</html>

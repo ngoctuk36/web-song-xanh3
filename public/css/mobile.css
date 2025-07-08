@@ -1,0 +1,7 @@
+body { margin:0; font-family: Arial, sans-serif; background:#e0f2f1; color:#004d40; }
+.screen { padding:20px; }
+.hidden { display:none; }
+input, button { width:100%; padding:10px; margin:5px 0; border-radius:5px; border:1px solid #004d40; }
+button { background:#00796b; color:#fff; border:none; }
+.bottom-nav { position:fixed; bottom:0; left:0; right:0; display:flex; background:#004d40; }
+.bottom-nav button { flex:1; border:none; background:transparent; color:#fff; padding:15px 0; }
